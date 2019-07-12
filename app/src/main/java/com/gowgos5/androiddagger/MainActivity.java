@@ -1,11 +1,14 @@
 package com.gowgos5.androiddagger;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import javax.inject.Inject;
+
 public class MainActivity extends AppCompatActivity {
-    private Car car;
+    @Inject
+    public Car car;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,7 +16,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         CarComponent component = DaggerCarComponent.create();
-        car = component.getCar();
+
+        // Field injection
+        component.inject(this);
+
+        // Provision method
+        // car = component.getCar();
         car.drive();
     }
 }
