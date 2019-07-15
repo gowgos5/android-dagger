@@ -2,11 +2,13 @@ package com.gowgos5.androiddagger;
 
 import dagger.Component;
 
+// Annotates an interface or abstract class for which a fully-formed, dependency-injected
+// implementation is to be generated from a set of modules.
 @Component
 public interface CarComponent {
-    // Provision method
+    // Provision methods have no parameters and return an injected or provided type.
     Car getCar();
 
-    // Field injection
+    // For Field / Method injection(s)
     void inject(MainActivity mainActivity);
 }

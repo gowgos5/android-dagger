@@ -2,9 +2,10 @@ package com.gowgos5.androiddagger;
 
 import javax.inject.Inject;
 
-public class Engine {
+class Engine {
+    // Constructor injection
     @Inject
-    public Engine() {
+    Engine() {
 
     }
 }

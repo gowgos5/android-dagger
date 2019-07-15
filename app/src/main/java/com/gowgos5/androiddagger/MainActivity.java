@@ -17,11 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
         CarComponent component = DaggerCarComponent.create();
 
-        // Field injection
+        // Called for Field / Method injection(s)
         component.inject(this);
 
-        // Provision method
+        // Provision method (refer to CarComponent.java)
         // car = component.getCar();
+
         car.drive();
     }
 }
