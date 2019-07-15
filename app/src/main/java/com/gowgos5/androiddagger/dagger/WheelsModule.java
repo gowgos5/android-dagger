@@ -1,4 +1,8 @@
-package com.gowgos5.androiddagger;
+package com.gowgos5.androiddagger.dagger;
+
+import com.gowgos5.androiddagger.car.Rims;
+import com.gowgos5.androiddagger.car.Tires;
+import com.gowgos5.androiddagger.car.Wheels;
 
 import dagger.Module;
 import dagger.Provides;

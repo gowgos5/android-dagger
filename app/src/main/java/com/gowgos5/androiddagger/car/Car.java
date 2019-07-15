@@ -1,10 +1,10 @@
-package com.gowgos5.androiddagger;
+package com.gowgos5.androiddagger.car;
 
 import android.util.Log;
 
 import javax.inject.Inject;
 
-class Car {
+public class Car {
     private static final String TAG = "Car";
 
     // Field injection (2)
@@ -16,18 +16,18 @@ class Car {
 
     // Constructor injection (1)
     @Inject
-    Car(Engine engine, Wheels wheels) {
+    public Car(Engine engine, Wheels wheels) {
         this.engine = engine;
         this.wheels = wheels;
     }
 
     // Method injection (3)
     @Inject
-    void enableRemote(Remote remote) {
+    public void enableRemote(Remote remote) {
         remote.setListener(this);
     }
 
-    void drive() {
+    public void drive() {
         engine.start();
         Log.d(TAG, "driving...");
     }

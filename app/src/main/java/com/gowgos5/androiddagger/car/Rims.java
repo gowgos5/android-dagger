@@ -1,5 +1,5 @@
-package com.gowgos5.androiddagger;
+package com.gowgos5.androiddagger.car;
 
-class Rims {
+public class Rims {
     // From third-party libraries. Cannot annotate with @Inject.
 }

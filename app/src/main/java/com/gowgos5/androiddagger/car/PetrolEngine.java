@@ -1,6 +1,8 @@
-package com.gowgos5.androiddagger;
+package com.gowgos5.androiddagger.car;
 
 import android.util.Log;
+
+import com.gowgos5.androiddagger.car.Engine;
 
 import javax.inject.Inject;
 
@@ -8,7 +10,7 @@ public class PetrolEngine implements Engine {
     private static final String TAG = "Car";
 
     @Inject
-    PetrolEngine() {
+    public PetrolEngine() {
 
     }
 

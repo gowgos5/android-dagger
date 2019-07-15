@@ -1,4 +1,4 @@
-package com.gowgos5.androiddagger;
+package com.gowgos5.androiddagger.car;
 
 import android.util.Log;
 

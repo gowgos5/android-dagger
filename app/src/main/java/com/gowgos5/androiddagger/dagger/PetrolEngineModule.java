@@ -1,4 +1,7 @@
-package com.gowgos5.androiddagger;
+package com.gowgos5.androiddagger.dagger;
+
+import com.gowgos5.androiddagger.car.PetrolEngine;
+import com.gowgos5.androiddagger.car.Engine;
 
 import dagger.Binds;
 import dagger.Module;

@@ -1,17 +1,17 @@
-package com.gowgos5.androiddagger;
+package com.gowgos5.androiddagger.car;
 
 import android.util.Log;
 
 import javax.inject.Inject;
 
-class Remote {
+public class Remote {
     private static final String TAG = "Remote";
 
     @Inject
-    Remote() {
+    public Remote() {
     }
 
-    void setListener(Car car) {
+    public void setListener(Car car) {
         Log.d(TAG, "Remote connected");
     }
 }

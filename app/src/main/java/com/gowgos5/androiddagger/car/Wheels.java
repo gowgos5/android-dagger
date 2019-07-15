@@ -1,15 +1,15 @@
-package com.gowgos5.androiddagger;
+package com.gowgos5.androiddagger.car;
 
 import javax.inject.Inject;
 
-class Wheels {
+public class Wheels {
     // From third-party libraries. Cannot annotate with @Inject.
 
     private Rims rims;
     private Tires tires;
 
     @Inject
-    Wheels(Rims rims, Tires tires) {
+    public Wheels(Rims rims, Tires tires) {
         this.rims = rims;
         this.tires = tires;
     }
